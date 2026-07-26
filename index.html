@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konferencja Medyczna | SKN</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#strona-glowna">Strona Główna</a>
+          </li>
+          <li class="nav-item">
+            <a class = "nav-link" href="#sponsors">Sponsorzy</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#o-skn">O SKN</a>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero" id="strona-glowna">
+  <div class="container">
+    <div class="row align-items-center hero-content">
+
+      <div class="col-lg-7 text-center text-lg-start">
+        <span class="badge hero-date mb-3">
+          <i class="bi bi-calendar-event me-2"></i>
+          20–21 listopada 2026 · Katowice
+        </span>
+        <h1>Śląska Konferencja<br>Medycyny Ekstremalnej</h1>
+
+        <p class="lead mt-3">
+         Już tej jesieni Katowice staną się centrum spotkań ekspertów i pasjonatów medycyny ekstremalnej.
+        </p>
+
+        <div class="mt-4 d-flex gap-3 justify-content-center justify-content-lg-start flex-wrap">
+          <a href="#plan" class="btn btn-primary hero-primary-btn btn-lg px-4">
+            <i class="bi bi-calendar-event me-2"></i>
+            Plan już wkrótce
+          </a>
+
+          <a href="#o-skn" class="btn hero-outline-btn btn-lg px-4">
+            Poznaj SKN
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-5 mt-5 mt-lg-0 d-flex justify-content-center">
+        <div class="">
+          <img
+            src="/images/logo/LogoEkstremalna.png"
+            alt="Logo Śląskiej Konferencji Medycyny Ekstremalnej"
+            class="img-fluid hero-logo">
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </header>
+
+  <!-- Timer-->
+  <section id="plan">
+    <div class="container">
+
+      <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header conference-header text-white">
+                    <h4 class="mb-0 text-center">Save the date</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row text-center">
+                        <div class="col-3">
+                            <h3 id="days" class="display-4">00</h3>
+                            <p>Days</p>
+                        </div>
+                        <div class="col-3">
+                            <h3 id="hours" class="display-4">00</h3>
+                            <p>Hours</p>
+                        </div>
+                        <div class="col-3">
+                            <h3 id="minutes" class="display-4">00</h3>
+                            <p>Minutes</p>
+                        </div>
+                        <div class="col-3">
+                            <h3 id="seconds" class="display-4">00</h3>
+                            <p>Seconds</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+  </section>
+
+   <!--Guest-->
+ <section class = "guest" id="guest">
+ </section>
+
+  <!-- Sponsors -->
+  <section class="sponsors md-4" id = "sponsors">
+    <div class="container">
+        <h2 class="text-center mb-4 text-center fw-bold" style="color: var(--medical-dark);">Patroni honorowi oraz sponsorzy:</h2>
+
+        <div class="logos">
+            <div class="logos-slide">
+                <img src="images/sponsors/gornosl.PNG" alt="Górnośląsko - Zagłębiowska Metropolia">
+                <img src="images/sponsors/sum.PNG" alt="Śląski Uniwersytet medyczny w katowicach">
+
+            </div>
+            <div class="logos-slide">
+                <img src="images/sponsors/gornosl.PNG" alt="Górnośląsko - Zagłębiowska Metropolia">
+                <img src="images/sponsors/sum.PNG" alt="Śląski Uniwersytet medyczny w katowicach">
+
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+
+  <!-- o skn-->
+  <section id="o-skn">
+  <div class="container">
+    <h2 class="section-title text-center">Kilka słów o nas...</h2>
+    <p class="section-subtitle text-center">SKN Medycyny Ekstremalnej</p>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+        <p class="fs-5 text-muted">
+          Studenckie Koło Naukowe Medycyny Ekstremalnej Śląskiego Uniwersytetu Medycznego działa przy Klinice Chirurgii i Urologii Dziecięcej pod opieką dr n. med. Agnieszki Wiernik – specjalistki chirurgii dziecięcej oraz medycyny górskiej.
+          Łączymy pasję do medycyny, gór i ratownictwa, tworząc społeczność studentów, którzy chcą rozwijać się zarówno naukowo, jak i praktycznie. Naszym celem jest zdobywanie wiedzy i umiejętności z zakresu medycyny ekstremalnej oraz przygotowanie do działania w wymagających warunkach.
+        </p>
+
+        <ul class="list-unstyled mt-4">
+          <li class="mb-3">
+            <i class="bi bi-check-circle-fill text-success me-2"></i>
+            Organizujemy warsztaty, szkolenia i konferencje poświęcone medycynie ekstremalnej.
+          </li>
+          <li class="mb-3">
+            <i class="bi bi-check-circle-fill text-success me-2"></i>
+            Bierzemy udział w wyjazdach terenowych i ćwiczeniach praktycznych.
+          </li>
+          <li class="mb-3">
+            <i class="bi bi-check-circle-fill text-success me-2"></i>
+            Rozwijamy działalność naukową.
+          </li>
+          <li class="mb-3">
+            <i class="bi bi-check-circle-fill text-success me-2"></i>
+            Działamy wraz z ekspertami z zakresu medycyny górskiej i ratownictwa.
+          </li>
+        </ul>
+
+        <p class="fs-5 text-muted">
+          Współpracujemy z Pracownią Medycyny Górskiej Collegium Medicum Uniwersytetu Jagiellońskiego, dzięki czemu nasi członkowie mają możliwość zdobywania wiedzy od specjalistów oraz uczestniczenia we wspólnych inicjatywach naukowych.
+        </p>
+
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <section id = "gall">
+      <!-- galeria -->
+      <h3 class="text-center mb-4 fw-bold" style="color: var(--medical-dark);">Galeria</h3>
+      <div class="row g-3">
+        <div class="col-6 col-md-4 col-lg-3">
+          <img src="images/photo/06a605d9-b7da-4935-93ef-c207752ce5a6.JPG" alt="Galeria 1" class="gallery-img"
+               data-bs-toggle="modal" data-bs-target="#galleryModal" onclick="openGallery(this)">
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img src="images/photo/f0a798cd-005c-4318-8e41-1c62fe2e8238.JPG" alt="Galeria 2" class="gallery-img"
+               data-bs-toggle="modal" data-bs-target="#galleryModal" onclick="openGallery(this)">
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img src="images/photo/4e3bba75-8113-45f5-8373-7fe071d1100e.JPG" alt="Galeria 3" class="gallery-img"
+               data-bs-toggle="modal" data-bs-target="#galleryModal" onclick="openGallery(this)">
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img src="images/photo/PHOTO-2026-07-13-23-13-07.jpg" alt="Galeria 4" class="gallery-img"
+               data-bs-toggle="modal" data-bs-target="#galleryModal" onclick="openGallery(this)">
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img src="images/photo/fb6bceb6-1322-435c-ba8f-08e8391998fc.JPG" alt="Galeria 5" class="gallery-img"
+               data-bs-toggle="modal" data-bs-target="#galleryModal" onclick="openGallery(this)">
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img src="images/photo/da68b6e7-1f42-44d5-9480-55007a06d56b.JPG" alt="Galeria 6" class="gallery-img"
+               data-bs-toggle="modal" data-bs-target="#galleryModal" onclick="openGallery(this)">
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img src="images/photo/75546874-27ee-44ec-b566-91869017f14f.JPG" alt="Galeria 7" class="gallery-img"
+               data-bs-toggle="modal" data-bs-target="#galleryModal" onclick="openGallery(this)">
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img src="images/photo/d1d5f0ff-a8bb-444f-9c56-aefc355f6475.JPG" alt="Galeria 8" class="gallery-img"
+               data-bs-toggle="modal" data-bs-target="#galleryModal" onclick="openGallery(this)">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal galerii -->
+  <div class="modal fade" id="galleryModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-0 text-center">
+          <img id="modalImg" src="" alt="Podgląd" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5 class="text-white mb-3">
+            Śląska Konferencja Medycyny Ekstremalnej
+          </h5>
+          <p>SKN Medycyny Ekstremalnej<br>
+             Klinika Chirurgii i Urologii Dziecięcej<br>Katowice  </p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="mb-1">
+            <i class="bi bi-envelope me-2"></i>
+            <a href="mailto:konf.ekstremalna@gmail.com">konf.ekstremalna@gmail.com</a>
+          </p>
+          <div class="mt-3">
+            <a href="https://www.facebook.com/profile.php?id=61570609708577" class="me-3 fs-5"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/skn_medycyny_ekstremalnej/" class="me-3 fs-5"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-secondary mt-4">
+      <p class="text-center small mb-0">© 2026 SKN Medycyna & FK. Wszelkie prawa zastrzeżone.</p>
+    </div>
+  </footer>
+
+  <!--JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+  <!--Counter script-->
+  <script>
+        //Counter
+    const countDownDate = new Date("November 20, 2026 00:00:00").getTime();
+    const x = setInterval(function() {
+    const now = new Date().getTime();
+    const distance = countDownDate - now;
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
+    document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
+    document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
+    document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
+    
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("days").innerHTML = "00";
+      document.getElementById("hours").innerHTML = "00";
+      document.getElementById("minutes").innerHTML = "00";
+      document.getElementById("seconds").innerHTML = "00";
+    }
+  }, 1000);
+  </script>
+</body>
+</html>
