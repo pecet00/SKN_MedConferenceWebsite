@@ -388,6 +388,9 @@ body {
       background-color: #00ff00;
     }
     /* Galeria */
+    #gall{
+      background-color: white;
+    }
     .gallery-img {
       border-radius: 10px;
       object-fit: cover;
@@ -890,4 +893,31 @@ body {
     .schedule-content h4 {
         font-size: 18px;
     }
+}
+
+
+.slider-track {
+  transition: transform 0.4s ease;
+}
+
+/* Desktop: 3 karty na slajd */
+.slider-card {
+  flex: 0 0 33.3333%;
+}
+
+/* Tablet: 2 karty (opcjonalnie) */
+@media (max-width: 991px) and (min-width: 768px) {
+  .slider-card {
+    flex: 0 0 50%;
+  }
+}
+
+/* Telefon: 1 karta na slajd */
+@media (max-width: 767px) {
+  .slider-card {
+    flex: 0 0 100%;
+  }
+}
+#speakers{
+  background-color: white;
 }

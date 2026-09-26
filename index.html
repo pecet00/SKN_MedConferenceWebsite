@@ -29,13 +29,16 @@
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="#strona-glowna">Strona Główna</a>
+            <a class="nav-link" href="#strona-glowna">Strona Główna</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#harmonogram">Harmonogram</a>
           </li>
           <li class="nav-item">
             <a class = "nav-link" href="#sponsors">Sponsorzy</a>
+          </li>
+          <li class="nav-item">
+            <a class = "nav-link" href="#speakers">Prelegenci</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#o-skn">O SKN</a>
@@ -480,12 +483,14 @@
                 <img src="images/sponsors/sum.PNG" alt="Śląski Uniwersytet medyczny w katowicach">
                  <img src="images/sponsors/slaskaIzbaLekarska.png" alt="slaskaIzbaLekarska">
                  <img src="images/sponsors/Kingrunner.png" alt="Kingrunner">
+                 <img src="images/sponsors/ssn.png" alt="ssn">
             </div>
             <div class="logos-slide">
                 <img src="images/sponsors/gornosl.PNG" alt="Górnośląsko - Zagłębiowska Metropolia">
                 <img src="images/sponsors/sum.PNG" alt="Śląski Uniwersytet medyczny w katowicach">
                 <img src="images/sponsors/slaskaIzbaLekarska.png" alt="slaskaIzbaLekarska">
                 <img src="images/sponsors/Kingrunner.png" alt="Kingrunner">
+                <img src="images/sponsors/ssn.png" alt="ssn">
             </div>
         </div>
     </div>
@@ -513,7 +518,37 @@
     </div>
     </section>
 
+<!--Prelegenci-->
+<section id = "speakers">
+  <h2 class="section-title text-center">Prelegenci:</h2>
 
+  <div class="position-relative mx-auto mt-5">
+  <div class="overflow-hidden">
+    <div class="d-flex slider-track" id="sliderTrack">
+
+      <div class="slider-card px-2">
+        <img src="images/guest/mMakowska.png" class="img-fluid rounded shadow-sm" alt="Maja Makowska">
+      </div>
+      <div class="slider-card px-2">
+        <img src="images/guest/zWitych.png" class="img-fluid rounded shadow-sm" alt="Prelegent 2">
+      </div>
+      <div class="slider-card px-2">
+        <img src="images/guest/tDarocha.png" class="img-fluid rounded shadow-sm" alt="Prelegent 3">
+      </div>
+      <div class="slider-card px-2">
+        <img src="images/guest/sKosiński.png" class="img-fluid rounded shadow-sm" alt="Prelegent 4">
+      </div>
+
+    </div>
+  </div>
+
+  <button class="btn btn-dark rounded-circle position-absolute top-50 start-0 translate-middle-y ms-2"
+          style="width:40px; height:40px;" onclick="moveSlide(-1)">‹</button>
+  <button class="btn btn-dark rounded-circle position-absolute top-50 end-0 translate-middle-y me-2"
+          style="width:40px; height:40px;" onclick="moveSlide(1)">›</button>
+
+</div>
+</section>
 
   <!-- o skn-->
     <section id="o-skn">
@@ -642,32 +677,9 @@
 
   <!--JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="main.js"></script>
-  <!--Counter script-->
-  <script>
-        //Counter
-    const countDownDate = new Date("November 20, 2026 00:00:00").getTime();
-    const x = setInterval(function() {
-    const now = new Date().getTime();
-    const distance = countDownDate - now;
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  <script src="js/main.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/counter.js"></script>
 
-    document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
-    document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
-    document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
-    document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
-    
-    if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("days").innerHTML = "00";
-      document.getElementById("hours").innerHTML = "00";
-      document.getElementById("minutes").innerHTML = "00";
-      document.getElementById("seconds").innerHTML = "00";
-    }
-  }, 1000);
-  </script>
 </body>
 </html>
